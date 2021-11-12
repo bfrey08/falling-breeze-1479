@@ -1,6 +1,7 @@
 class PlantsController < ApplicationController
   def index
-  @invoices = Invoice.all
+  @plants = Plant.all
   end
-  
+
+
 end

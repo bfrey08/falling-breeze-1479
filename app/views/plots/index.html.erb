@@ -1,0 +1,9 @@
+<h3> Plots </h3>
+<% @plots.each do |plot| %>
+<%= plot.number %>
+  <% plot.plants.each do |plant| %>
+  <%= plant.name %>
+  <%= link_to('delete', "/plants/#{plant.id}", method: :delete) %>
+  <% end %>
+
+<% end %>
